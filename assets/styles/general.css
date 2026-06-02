@@ -648,9 +648,9 @@ footer .footer-links a:hover { color: var(--cyan); }
   .nav-links {
     position: absolute;
     top: calc(100% + 10px);
-    left: 5vw;
-    right: 5vw;
-    width: auto;
+    left: auto;
+    right: 16px;
+    width: min(280px, calc(100vw - 32px));
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
@@ -712,7 +712,6 @@ footer .footer-links a:hover { color: var(--cyan); }
   .nav-logo span { font-size: 12px; }
   .nav-logo img { height: 32px; }
   .nav-links {
-    left: 16px;
     right: 16px;
   }
   .nav-links a, .nav-cta { font-size: 11px; }
