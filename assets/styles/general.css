@@ -823,7 +823,6 @@ footer .footer-links a:hover { color: var(--cyan); }
     flex-wrap: wrap;
   }
 }
-
 @media (max-width: 380px) {
   .nav-logo span { display: none; }
   .nav-links a {
