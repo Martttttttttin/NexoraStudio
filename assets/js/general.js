@@ -131,3 +131,15 @@ ScrollTrigger.create({
   }
 });
 gsap.set('.process-step', { opacity: 0, y: 40 });
+
+/* ── BACK TO TOP ── */
+const footerTop = document.querySelector('.footer-top');
+const footer = document.querySelector('footer');
+if (footerTop && footer) {
+  ScrollTrigger.create({
+    trigger: footer,
+    start: 'top bottom',
+    onEnter: () => footerTop.classList.add('visible'),
+    onLeaveBack: () => footerTop.classList.remove('visible')
+  });
+}
