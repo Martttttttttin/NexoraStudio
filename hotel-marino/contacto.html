@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Hotel-Marino</title>
+  <meta name="description" content="Contacto, ubicación y redes sociales de Hotel-Marino." />
+  <meta name="theme-color" content="#f6fbfb" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles/hotel-marino.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg hotel-navbar" aria-label="Navegacion principal">
+      <div class="container-xxl">
+        <a class="navbar-brand brand" href="index.html" aria-label="Hotel-Marino inicio">
+          <span class="brand-mark">HM</span>
+          <span>Hotel-Marino</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencias.html">Experiencias</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          </ul>
+          <a class="nav-cta" href="reservas.html">Reservar</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <img src="assets/img/hotel-marino-hero.png" alt="Vista de la Costa Verde de Miraflores" />
+      <div class="page-hero-overlay"></div>
+      <div class="container-xxl position-relative">
+        <div class="col-lg-7 reveal">
+          <p class="eyebrow">Contacto</p>
+          <h1>Estamos frente a la Costa Verde.</h1>
+          <p class="hero-copy">Escríbenos para coordinar visitas, reservas especiales o eventos privados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="container-xxl">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 reveal">
+            <p class="section-kicker">Ubicación</p>
+            <h2 class="section-title">Miraflores, Lima.</h2>
+            <p class="section-copy mt-4">Malecón de Miraflores, Lima, Perú. La ubicación del mapa es referencial para el prototipo.</p>
+            <div class="contact-links">
+              <a href="mailto:reservas@hotelmarino.pe">reservas@hotelmarino.pe</a>
+              <a href="https://wa.me/51900111222" target="_blank" rel="noopener noreferrer">+51 900 111 222</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form class="contact-form" id="contact-form">
+              <div class="mb-3">
+                <label class="form-label" for="contact-name">Nombre</label>
+                <input class="form-control" id="contact-name" type="text" name="contactName" placeholder="Tu nombre" autocomplete="name" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-email">Correo</label>
+                <input class="form-control" id="contact-email" type="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="contact-message">Mensaje</label>
+                <textarea class="form-control" id="contact-message" name="message" rows="5" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+              </div>
+              <button class="btn-hotel btn-hotel-ghost-dark w-100" type="submit">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <iframe title="Mapa de ubicación referencial de Hotel-Marino en Miraflores" src="https://www.google.com/maps?q=Costa%20Verde%20Miraflores%20Lima%20Peru&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-xxl d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
+      <a class="brand" href="index.html"><span class="brand-mark">HM</span><span>Hotel-Marino</span></a>
+      <p>Hospitalidad boutique frente al Pacífico.</p>
+      <span>© 2026 Hotel-Marino. Prototipo web por Nexora Studio.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/hotel-marino.js"></script>
+</body>
+</html>
